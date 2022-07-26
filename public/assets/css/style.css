@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 0 5%;
+}
+
+.menu img {
+    width: 40%;
+}
+
+.menu .menuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.menu li {
+    list-style: none;
+    display: flex;
+}
+
+.menu .menuList li a {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: full-width;
+    font-size: larger;
+    font-family: "Arial";
+}
+
+.menu .menuList a:hover {
+    color: firebrick;
+    transform: scale(1.2);
+}
+
+.background_main {
+    background-image: url("../../assets/img/Motoccaz-Background.png");
+    background-size: cover;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.background_main h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 40%;
+    margin-left: 1.9em;
+    font-family: "Arial";
+}
+
+.background_main p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+    margin-left: 4em;
+    font-family: "Arial";
+}
+
+.background_main a {
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+    margin-left: 4em;
+    font-family: "Arial";
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid firebrick;
+    background-color: firebrick;
+    border-radius: 30px;
+    width: 8em;
+    height: 3em;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.btn_main:hover {
+    background-color: white;
+    color: firebrick;
+    transform: rotate(360deg);
+}
+

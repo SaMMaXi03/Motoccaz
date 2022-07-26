@@ -15,6 +15,6 @@ class HomeController extends AbstractController
 
     public function home(AuthenticationUtils $authenticationUtils): Response
     {
-        return new Response('connect');
+        return $this->render('base.html.twig');
     }
 }
