@@ -1,0 +1,8 @@
+//For phone
+@media screen and (max-width:320px) {
+  .background_main {
+    background-image: url("../../assets/img/Motoccaz-Background.png");
+    clip:rect(0, 20px, 0, 20px);
+    position: absolute;
+  }
+}

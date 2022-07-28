@@ -17,4 +17,13 @@ class HomeController extends AbstractController
     {
         return $this->render('base.html.twig');
     }
+
+    /**
+     * @Route("/log", name="log_home")
+     */
+
+    public function log_home(AuthenticationUtils $authenticationUtils): Response
+    {
+        return $this->render('front/_userlogged.html.twig');
+    }
 }

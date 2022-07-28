@@ -1,0 +1,65 @@
+footer {
+  background-color: $lorem;
+  color: $text;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.foot h2 a {
+  color: $text;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.foot p a {
+  color: $footerText;
+  font-size: medium;
+  text-decoration: none;
+}
+
+.nav {
+  margin-top: 1em;
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: $footerText;
+}
+
+.nav li a:hover {
+  color: $btn;
+}
+
+.nav li:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+
+.feet {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.fb:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+
+.ig:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}
+
+.tw:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}

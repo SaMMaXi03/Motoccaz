@@ -2,7 +2,32 @@
 
 {% block title %}Register{% endblock %}
 
-{% block body %}
+{% block header %}
+
+    <header>
+        <nav class="menu">
+            <a href="{{ path('home') }}"><img src="{{ asset('assets/img/Motoccaz.png') }}" alt="logo motoccaz"></a>
+            <ul class="menuList">
+                <li>
+                    <a href="{{ path('home') }}">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">Annonce</a>
+                </li>
+                <li>
+                    <a href="{{ path('app_login') }}">Connexion</a>
+                </li>
+                <li>
+                    <a href="{{ path('app_register') }}">Inscription</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+{% endblock %}
+
+{% block main %}
+
     <h1>Register</h1>
 
     {{ form_start(registrationForm) }}
@@ -14,4 +39,51 @@
 
         <button type="submit" class="btn">Register</button>
     {{ form_end(registrationForm) }}
+
+{% endblock %}
+
+{% block footer %}
+
+    <footer>
+
+        <div class="foot">
+            <h2><a href="{{ path('home') }}">Motoccaz</a></h2>
+            <br>
+            <p>
+                <a href="#">contact@motoccaz.fr</a>
+            </p>
+        </div>
+        <div>
+            <h3>Navigation</h3>
+            <ul class="nav">
+                <li>
+                    <a href="{{ path('home') }}">Accueil</a>
+                </li>
+                <br>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <br>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Réseaux sociaux</h3>
+            <ul class="feet">
+                <li class="fb">
+                    <a href="#"><img src="{{ asset('assets/img/facebook.png') }}" width="30em" alt="Facebook"></a>
+                </li>
+                <li class="ig">
+                    <a href="#"><img src="{{ asset('assets/img/insta.png') }}" width="30em" alt="Instagram"></a>
+                </li>
+                <li class="tw">
+                    <a href="#"><img src="{{ asset('assets/img/twitter.png') }}" width="30em" alt="Twitter"></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
 {% endblock %}
