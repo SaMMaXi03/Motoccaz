@@ -25,14 +25,20 @@
                             <a href="{{ path('home') }}">Accueil</a>
                         </li>
                         <li>
-                            <a href="#">Annonce</a>
+                            <a href="{{ path('annonces') }}">Annonces</a>
                         </li>
-                        <li>
-                            <a href="{{ path('app_login') }}">Connexion</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('app_register') }}">Inscription</a>
-                        </li>
+                        {% if app.user == null %}
+                            <li>
+                                <a href="{{ path('app_login') }}">Connexion</a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="{{ path('addAnnonce') }}">Ajouter une annonce</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('app_logout') }}">Déconnexion</a>
+                            </li>
+                        {% endif %}
                     </ul>
                 </nav>
             </header>

@@ -201,20 +201,154 @@ header {
   transform: rotate(360deg);
 }
 
-.box_login {
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 300px;
-  padding: 30px;
-  background-color: darkgrey;
-  box-shadow: 2px 2px 4px firebrick;
+.main {
+  margin-top: 1em;
+  margin-bottom: 7.6em;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
-.login {
+.box_login {
   text-align: center;
-  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 350px;
+  height: 400px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
+  background-color: darkgrey;
+  box-shadow: 5px 5px 60px black;
+}
+
+.connexion {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.box_login input {
+  background-color: transparent;
+  width: 300px;
+  height: 15px;
+  margin: 15px 10px;
+  padding: 5px 0 5px 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+}
+
+.box_login input:focus{
+  outline: none;
+}
+
+.btn-iden {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 50px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;cursor: pointer;
+  transition: background-color 1s;
+}
+
+.btn-iden:hover {
+  background-color: firebrick;
+}
+
+.btn-inscri {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 50px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;cursor: pointer;
+  transition: background-color 1s;
+}
+
+.btn-inscri:hover {
+  background-color: firebrick;
+}
+
+.box_form {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 350px;
+  height: 650px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
+  box-shadow: 5px 5px 60px black;
+}
+
+.box_form input {
+  background-color: transparent;
+  width: 300px;
+  height: 15px;
+  margin: 15px 10px;
+  padding: 5px 0 5px 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+}
+
+.box_form input:focus{
+  outline: none;
+}
+
+.form {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.inscri {
+  margin-top: 1em;
+}
+
+.middle {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.center {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box_annonce {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 600px;
+  padding: 30px;
+  margin-bottom: 1em;
+  box-shadow: 3px 3px 3px darkgrey;
+}
+
+.href {
+  margin-top: 2em;
+}
+
+.href a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: full-width;
+  font-size: larger;
+  color: black;
+  transition: color 0.5s;
+}
+
+.href a:hover {
+  color: firebrick;
 }
 
 footer {

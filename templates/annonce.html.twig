@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <main>
+        <div class="middle">
+            <h1>Annonces</h1>
+            <br>
+            <label for="Marque">Marque</label>
+            <br>
+            <select name="marque" id="Marque">
+                <option value=" ">-----</option>
+                <option value="Aprilia">Aprilia</option>
+                <option value="Bmw">Bmw</option>
+                <option value="Ducati">Ducati</option>
+                <option value="Harley">Harley-Davidson</option>
+                <option value="Husqverna">Husqverna</option>
+                <option value="Kawasaki">Kawasaki</option>
+                <option value="Ktm">Ktm</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Triumph">Triumph</option>
+                <option value="Yamaha">Yamaha</option>
+            </select>
+        </div>
+        <div class="center">
+            <div class="box_annonce">
+                {% for annonce in annonces %}
+                    <p>Marque : {{ annonce.brand }}</p>
+                    <p>Modèle : {{ annonce.model }}</p>
+                    <p>Années : {{ annonce.year }}</p>
+                    <p>Prix : {{ annonce.price }}€</p>
+                    <p>{{ annonce.picture }}</p>
+                    <p>{{ annonce.description }}</p>
+                    <p>Vendeur : {{annonce.user}}</p>
+                    <p>Publié le : {{ annonce.publishedAt | date('d-m-y') }}</p>
+                    <br>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}
